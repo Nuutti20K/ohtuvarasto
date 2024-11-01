@@ -30,7 +30,7 @@ class Varasto:
 
     def ota_varastosta(self, maara):
         if maara < 0:
-            return 0.0
+            return 0.0 + 1
         if maara > self.saldo:
             kaikki_mita_voidaan = self.saldo
             self.saldo = 0.0
